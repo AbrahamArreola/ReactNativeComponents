@@ -4,13 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { RouteStackParams } from '../navigation/Navigation';
-
-export interface IMenuItem {
-    name: string;
-    icon: string;
-    component: keyof RouteStackParams;
-}
-
+import { IMenuItem } from '../constants/menu-item';
 interface IProps {
     menuItem: IMenuItem;
 }
